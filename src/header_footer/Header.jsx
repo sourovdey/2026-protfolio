@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './style/header_footer.css'
+import '../App.css'
 
 function Header() {
   const [count, setCount] = useState(0)
@@ -7,7 +8,7 @@ function Header() {
   return (
     <>
     <section className='header'>
-      <div className="menu">
+      <div className="menu container">
       
       {/* Left Side */}
       <div className="logo">

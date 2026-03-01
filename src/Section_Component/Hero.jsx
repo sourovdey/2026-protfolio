@@ -11,7 +11,7 @@ function Hero() {
 
   return (
     <section className="hero">
-      <div className="hero-container">
+      <div className="hero-container container">
 
         <div className="hero-image">
           <img src={profile} alt="Aromal" />

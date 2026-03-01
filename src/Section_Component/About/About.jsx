@@ -26,8 +26,6 @@ import img22 from "../../assets/gallery/image22.webp";
 import img23 from "../../assets/gallery/image23.webp";
 import img24 from "../../assets/gallery/image24.webp";
 import img25 from "../../assets/gallery/image25.webp";
-import video1 from "../../assets/gallery/video1.mp4";
-import video2 from "../../assets/gallery/video2.mp4";
 
 
 

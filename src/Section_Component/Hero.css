@@ -1,0 +1,123 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #f8fafc;
+    background-image: radial-gradient(#d4d4d8 1px, transparent 1px); */
+    /* background-size: 24px 24px; */
+    padding: 0px 0px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/* IMAGE */
+.hero-image img {
+    width: 300px;
+    border-radius: 24px;
+    transform: rotate(-6deg);
+    transition: transform 0.4s ease;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image img:hover {
+    transform: rotate(0deg);
+}
+
+/* TEXT BASE ANIMATION STATE */
+.hero-greet,
+.hero-title,
+.hero-tags {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(20px);
+}
+
+/* WHEN SHOW */
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 0.8s ease;
+}
+
+/* DELAYS */
+.delay-1 {
+    transition-delay: 0.3s;
+}
+
+.delay-2 {
+    transition-delay: 0.8s;
+}
+
+.delay-3 {
+    transition-delay: 1.3s;
+}
+
+/* TEXT STYLES */
+.hero-greet {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.hero-title {
+    font-size: 42px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 30px;
+}
+
+.hero-tags {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* TAG STYLE */
+.tag {
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tag-orange {
+    background: #fff3e8;
+    color: #ea580c;
+}
+
+.tag-blue {
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+.tag-pink {
+    background: #fce7f3;
+    color: #db2777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 220px;
+        transform: rotate(0deg);
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+}
